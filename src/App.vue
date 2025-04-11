@@ -10,6 +10,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
+    <p>Testing a Font</p>
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
@@ -26,5 +27,8 @@ import HelloWorld from './components/HelloWorld.vue'
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+p {
+  font-family: 'PT Serif', serif;
 }
 </style>
