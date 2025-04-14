@@ -1,19 +1,20 @@
 <template>
-  <b-container class="mt-5 d-flex justify-content-center">
-    <b-card title="Login" class="p-4" style="max-width: 400px; width: 100%;">
-      <b-form @submit.prevent="handleLogin">
-        <b-form-group label="Email" label-for="email">
-          <b-form-input id="email" v-model="email" type="email" placeholder="Enter email" required />
-        </b-form-group>
-
-        <b-form-group label="Password" label-for="password">
-          <b-form-input id="password" v-model="password" type="password" placeholder="Enter password" required />
-        </b-form-group>
-
-        <b-button type="submit" variant="primary" block>Login</b-button>
+  <div class="d-flex justify-content-center align-items-center login__container" style="min-height: 100vh">
+    <div title="Login" class="px-5 py-3 d-flex flex-column justify-content-start login__glass">
+      <h1 class="text-start mb-4">Login</h1>
+      <b-form class="d-flex flex-column gap-3" @submit.prevent="handleLogin">
+        <div class="d-flex flex-column align-items-start gap-1">
+          <label for="email">Username</label>
+          <b-form-input class="bg-light" id="email" v-model="email" type="email" placeholder="Enter email" required />
+        </div>
+        <div class="d-flex flex-column align-items-start gap-1">
+          <label for="password">Password</label>
+          <b-form-input id="password" v-model="password" type="password" />
+        </div>
+        <b-button type="submit" class="login__button" variant="primary" block>Login</b-button>
       </b-form>
-    </b-card>
-  </b-container>
+    </div>
+  </div>
 </template>
 
 <script setup>

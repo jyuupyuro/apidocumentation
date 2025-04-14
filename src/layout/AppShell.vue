@@ -1,16 +1,17 @@
 <template>
-    <div class="d-flex" style="min-height: 100vh">
-      <!-- Sidebar -->
-      <Sidebar />
-  
-      <!-- Main content area -->
-      <div class="flex-grow-1 p-4">
+  <b-container style="min-height: 100vh">
+    <!-- Sidebar -->
+    <b-row>
+      <b-col md="4">
+        <Sidebar />
+      </b-col>
+      <b-col md="8">
         <slot /> <!-- or router-view if you're not nesting -->
-      </div>
-    </div>
-  </template>
-  
-  <script setup>
-  import Sidebar from './Sidebar.vue';
-  </script>
-  
+      </b-col>
+    </b-row>
+  </b-container>
+</template>
+
+<script setup>
+import Sidebar from './Sidebar.vue';
+</script>
