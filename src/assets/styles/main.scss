@@ -1,0 +1,35 @@
+// 1. Import Bootstrap core
+@import "bootstrap/scss/bootstrap";
+
+// 2. Import optional Bootstrap variable overrides
+@import "../styles/bootstrap-overrides.scss";
+
+// 3. Global styles
+body {
+  font-family: 'PT Serif', serif;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+button {
+  font-weight: 500;
+}
