@@ -1,21 +1,22 @@
 <template>
-    <header class="d-flex justify-content-between align-items-center px-4 py-3 header__container border-bottom ">
-        <h4 class="m-0">📘 API Documentation</h4>
-        <div class="d-flex gap-3">
-            <b-form-checkbox v-model="isDark"  switch>
-                {{ isDark ? 'Dark' : 'Light' }}
-            </b-form-checkbox>
-            <b-button size="sm" variant="outline-danger" @click="handleLogout">
-                Logout
-            </b-button>
-        </div>
-    </header>
+  <header class="d-flex justify-content-between align-items-center px-4 py-3 header__container border-bottom ">
+    <h4 class="m-0">📘 API Documentation</h4>
+    <div class="d-flex gap-3">
+      <b-form-checkbox v-model="isDark" switch>
+        {{ isDark ? 'Dark' : 'Light' }}
+      </b-form-checkbox>
+      <Button size="sm" variant="alert" @click="handleLogout">
+        Logout
+      </Button>
+    </div>
+  </header>
 </template>
 
 <script setup>
 import { useRouter } from 'vue-router';
 import { logout as clearSession } from '@/store/auth';
 import { ref, watch, onMounted } from 'vue';
+import Button from '../components/common/button.vue';
 
 const router = useRouter();
 const isDark = ref(false);

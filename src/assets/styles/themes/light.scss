@@ -5,5 +5,19 @@ body.light {
   --card-bg: #ffffff;
   --border-color: #dee2e6;
   --sidebar-bg: #f8f9fa;
-  --header-bg: #7A4DFC
+  --header-bg: #7A4DFC;
+
+  //button
+  --btn-primary: #6200ee;
+  --btn-primary-text: #fff;
+  --btn-primary-hover: #4b00c4;
+  --btn-secondary: #fff;
+  --btn-secondary-hover:#6200ee;
+  --btn-secondary-outline: #d3d3d3;
+  --btn-secondary-text: #6200ee;
+  --btn-success: #198754;
+  --btn-success-text: #fff;
+  --btn-alert: #dc3545;
+  --btn-alert-hover: #b02a37;
+  --btn-alert-text: #fff;
 }

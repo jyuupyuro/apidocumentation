@@ -8,9 +8,20 @@
         <span>{{ api.path }}</span>
       </router-link>
     </b-list-group>
-    <b-button variant="outline-danger" size="sm" class="mt-4 w-100" @click="logoutUser">
-      Logout
-    </b-button>
+    <div class="d-flex flex-column gap-4 mt-4">
+      <Button variant="alert" size="sm" @click="logoutUser">
+        Logout
+      </Button>
+      <Button size="md" variant="primary">
+        Primary Button
+      </Button>
+      <Button size="md" variant="secondary">
+        Seconday Button
+      </Button>
+      <Button size="md" variant="success">
+        Success Button
+      </Button>
+    </div>
   </div>
 </template>
 
@@ -18,6 +29,7 @@
 import { useRouter, useRoute } from 'vue-router';
 import { apiDocs } from '@/api/docs';
 import { logout } from '@/store/auth';
+import Button from '@/components/common/button.vue';
 
 const router = useRouter();
 const route = useRoute();

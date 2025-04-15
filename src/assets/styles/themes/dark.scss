@@ -1,8 +1,23 @@
 body.dark {
   --bg-color: #121212;
-  --secondary-text-color: #ffff;
   --text-color: #e2e2e2;
+  --secondary-text-color: #ffff;
   --card-bg: #1e1e1e;
   --border-color: #333;
   --sidebar-bg: #1c1c1c;
+  --header-bg: #1E1E1E;
+
+  //button
+  --btn-primary: #BB86FC;
+  --btn-primary-text: #000000;
+  --btn-secondary: #121212;
+  --btn-secondary-outline: #d3d3d3;
+  --btn-secondary-text: #ffff;
+  --btn-success-outline: #198754;
+  --btn-success: #121212;
+  --btn-success-text: #fff;
+  --btn-alert-outline: #dc3545;
+  --btn-alert-hover: #b02a37;
+  --btn-alert: #121212;
+  --btn-alert-text: #fff;
 }
