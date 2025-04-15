@@ -4,6 +4,7 @@
 // 2. Import optional Bootstrap variable overrides
 @import "../styles/bootstrap-overrides.scss";
 @import "../styles/login.scss";
+@import "../styles/sidenav.scss";
 
 // 3. Global styles
 body {
@@ -29,6 +30,10 @@ code {
   padding: 2px 4px;
   border-radius: 4px;
   font-size: 0.95em;
+}
+
+.appshell{
+  height: 100%;
 }
 
 button {
