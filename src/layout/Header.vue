@@ -1,6 +1,6 @@
 <template>
-  <header class="d-flex justify-content-between align-items-center px-4 py-3 header__container border-bottom ">
-    <h4 class="m-0">📘 API Documentation</h4>
+  <header class="d-flex justify-content-between align-items-center px-4 py-3 header__container">
+    <h4 class="m-0">API Documentation</h4>
     <div class="d-flex gap-3">
       <b-form-checkbox v-model="isDark" switch>
         {{ isDark ? 'Dark' : 'Light' }}

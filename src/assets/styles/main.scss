@@ -13,8 +13,8 @@
 
 body {
   font-family: 'PT Serif', serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  // background-color: var(--bg-color);
+  // color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
   font-size: 16px;
   line-height: 1.6;
@@ -23,6 +23,10 @@ body {
 a {
   color: #007bff;
   text-decoration: none;
+}
+
+.apidoucmentation{
+  background-color: var(--bg-color);
 }
 
 a:hover {
@@ -37,23 +41,28 @@ code {
   font-size: 0.95em;
 }
 
-.appshell{
+.appshell {
   height: 100%;
+}
+
+.custom-container {
+  width: 95%;
+  margin: auto;
 }
 
 button {
   font-weight: 500;
 }
 
-.b-card,
-.b-button,
-.b-form-input,
-.b-form-group,
-.b-container,
-.b-row,
-.b-col {
-  background-color: var(--card-bg);
-  color: var(--text-color);
-  border-color: var(--border-color);
-  transition: all 0.3s ease;
-}
+// .b-card,
+// .b-button,
+// .b-form-input,
+// .b-form-group,
+// .b-container,
+// .b-row,
+// .b-col {
+//   background-color: var(--card-bg);
+//   color: var(--text-color);
+//   border-color: var(--border-color);
+//   transition: all 0.3s ease;
+// }

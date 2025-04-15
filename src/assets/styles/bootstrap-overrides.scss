@@ -1,18 +1,16 @@
 // Font
 $font-family-base: 'PT Serif', serif;
 
-// Color overrides
-$primary: #0d6efd;         // You can change this to any hex you want
-$secondary: #6c757d;
-$success: #198754;
-$info: #0dcaf0;
-$warning: #ffc107;
-$danger: #dc3545;
-$light: #f8f9fa;
-$dark: #212529;
-
 // Container padding
 $container-padding-x: 1rem;
 
 // Optional: override border radius, shadow, etc.
 $border-radius: 0.5rem;
+
+$container-max-widths: (
+  sm: 100%,     // applies from ≥576px
+  md: 95%,      // from ≥768px
+  lg: 95%,      // from ≥992px
+  xl: 95%,      // from ≥1200px
+  xxl: 95%      // from ≥1400px
+);
