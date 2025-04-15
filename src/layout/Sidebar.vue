@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-light border-end p-3 sidebar__container h-100">
+  <div class="border-end p-3 sidebar__container h-100">
     <h5 class="mb-4">API Docs</h5>
     <b-list-group flush>
       <router-link v-for="api in apiDocs" :key="api.id" :to="{ name: 'Docs', query: { endpoint: api.id } }"

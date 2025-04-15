@@ -6,11 +6,11 @@
     <b-container class="appshell">
       <b-row class="h-100">
         <!-- Sidebar -->
-        <b-col md="4">
+        <b-col md="3">
           <Sidebar />
         </b-col>
         <!-- Main Content -->
-        <b-col md="8">
+        <b-col md="9">
           <slot /> <!-- or router-view if you're not nesting -->
         </b-col>
       </b-row>
