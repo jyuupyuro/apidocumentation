@@ -1,6 +1,6 @@
 <template>
   <div class="p-3 sidenav__container h-100">
-    <h5 class="mb-4">API Documentation</h5>
+    <h5 class="mb-4 text-start">API Documentation</h5>
     <!-- <b-list-group flush>
       <router-link v-for="api in apiDocs" :key="api.id" :to="{ name: 'Docs', query: { endpoint: api.id } }"
         class="list-group-item list-group-item-action" :class="{ active: api.id === $route.query.endpoint }">

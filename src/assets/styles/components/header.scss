@@ -2,5 +2,6 @@
     &__container {
         background-color: var(--header-bg);
         color: var(--secondary-text-color);
+        transition: all 0.3s ease;
     }
 }

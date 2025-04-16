@@ -3,13 +3,14 @@
     <h4 class="m-0">API Documentation</h4>
     <div class="d-flex gap-3">
       <b-form-checkbox v-model="isDark" switch>
-        {{ isDark ? 'Dark' : 'Light' }}
+        {{ isDark ? '🌙' : '🌞' }}
       </b-form-checkbox>
       <Button size="sm" variant="alert" @click="handleLogout">
         Logout
       </Button>
     </div>
   </header>
+  <div class="theme-transition-circle" ref="circleRef"></div>
 </template>
 
 <script setup>
@@ -20,6 +21,7 @@ import Button from '../components/common/button.vue';
 
 const router = useRouter();
 const isDark = ref(false);
+const circleRef = ref(null);
 
 // Watch the toggle and update <body> + localStorage
 watch(isDark, (val) => {
