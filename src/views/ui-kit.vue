@@ -41,6 +41,6 @@
 </template>
 
 <script setup>
-import Button from '@/components/common/button.vue';
-import Input from '@/components/common/input.vue';
+import Button from '@/components/common/Button.vue';
+import Input from '@/components/common/Input.vue';
 </script>

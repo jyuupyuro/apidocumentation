@@ -24,8 +24,8 @@
 import { useRouter } from 'vue-router';
 import { logout as clearSession } from '@/store/auth';
 import { ref, watch, onMounted } from 'vue';
-import Input from '../components/common/input.vue';
-import Button from '../components/common/button.vue';
+import Input from '../components/common/Input.vue';
+import Button from '../components/common/Button.vue';
 
 const router = useRouter();
 const isDark = ref(false);
