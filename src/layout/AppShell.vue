@@ -5,7 +5,7 @@
 
     <!-- Main Content Area -->
     <div class="custom-container appshell">
-      <b-row class="h-100">
+      <b-row class="full-height-row">
         <!-- Sidebar -->
         <b-col v-if="route.name !== 'UI-kit'" md="3">
           <Sidebar class="d-none d-md-block" />

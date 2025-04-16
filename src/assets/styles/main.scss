@@ -32,7 +32,7 @@ a {
   text-decoration: none;
 }
 
-.apidoucmentation{
+.apidoucmentation {
   background-color: var(--bg-color);
 }
 
@@ -49,13 +49,20 @@ code {
 }
 
 .appshell {
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
 .custom-container {
   width: 95%;
   margin: auto;
-  height: 100vh;
+  min-height: 100vh;
+
+  .full-height-row {
+    display: flex;
+    flex: 1;
+  }
 }
 
 button {
