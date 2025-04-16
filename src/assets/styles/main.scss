@@ -11,6 +11,7 @@
 @import "./components/login.scss";
 @import"./components/button.scss";
 @import "./components/ui-kit.scss";
+@import "./components/input.scss";
 
 // Fonts
 @import './base/fonts.scss';
@@ -54,6 +55,7 @@ code {
 .custom-container {
   width: 95%;
   margin: auto;
+  height: 100vh;
 }
 
 button {

@@ -20,9 +20,21 @@
             <p class="lead">This is lead text</p>
             <p>This is normal paragraph text.</p>
         </section>
+
+        <section class="mb-5 ui">
+            <h5>Form Elements</h5>
+            <div class="d-flex gap-3 flex-wrap justify-content-center">
+                <Input v-model="email" placeholder="Email address">
+                <template #icon>
+                    <i class="fas fa-envelope" data-icon-left></i>
+                </template>
+                </Input>
+            </div>
+        </section>
     </div>
 </template>
 
 <script setup>
 import Button from '@/components/common/button.vue';
+import Input from '@/components/common/input.vue';
 </script>

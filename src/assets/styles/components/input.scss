@@ -1,0 +1,32 @@
+.input-wrapper {
+    position: relative;
+
+    .custom-input {
+        width: 100%;
+        padding-left: 2.25rem; // Leave space for left icon
+        border-radius: 10px;
+        border: 1px solid var(--border-color);
+        background-color: var(--form-bg);
+        color: var(--text-color);
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+
+        &:focus {
+            outline: none;
+            border-color: var(--btn-primary);
+            box-shadow: 0 0 0 2px rgba(122, 77, 252, 0.15);
+        }
+
+        &::placeholder {
+            color: var(--text-color);
+        }
+    }
+
+    .input-icon {
+        position: absolute;
+        left: 4%;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--text-color);
+        font-size: 1.25rem;
+    }
+}

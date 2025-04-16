@@ -1,5 +1,5 @@
 <template>
-  <div class="apidoucmentation d-flex flex-column" style="height: 100vh">
+  <div class="apidoucmentation d-flex flex-column">
     <!-- Header -->
     <Header />
 

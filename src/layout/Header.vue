@@ -1,6 +1,13 @@
 <template>
   <header class="d-flex justify-content-between align-items-center px-4 py-3 header__container header__border">
-    <h4 class="m-0">API Documentation</h4>
+    <router-link to="/docs" class="text-decoration-none text-reset">
+      <h4 class="m-0">API Documentation</h4>
+    </router-link>
+    <Input v-model="search" inputClass="header__form" placeholder="Search Here">
+    <template #icon>
+      <i class="fas fa-search" data-icon-left></i>
+    </template>
+    </Input>
     <div class="d-flex gap-3">
       <b-form-checkbox v-model="isDark" switch>
         {{ isDark ? '🌙' : '🌞' }}
@@ -17,6 +24,7 @@
 import { useRouter } from 'vue-router';
 import { logout as clearSession } from '@/store/auth';
 import { ref, watch, onMounted } from 'vue';
+import Input from '../components/common/input.vue';
 import Button from '../components/common/button.vue';
 
 const router = useRouter();

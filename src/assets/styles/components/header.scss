@@ -4,7 +4,16 @@
         color: var(--secondary-text-color);
         transition: all 0.3s ease;
     }
-    &__border{
+
+    &__border {
         border-bottom: 2px solid var(--header-border-bottom);
+    }
+
+    &__form {
+        // background-color: var(--header-form-bg);
+        background-color: var(--header-form-bg)!important;
+        &::placeholder{
+            color: var(--text-color);
+        }
     }
 }
