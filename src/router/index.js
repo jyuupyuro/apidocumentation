@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import Login from '@/views/Login.vue';
 import Docs from '@/views/Docs.vue';
+import UIkit from '@/views/ui-kit.vue';
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     name: 'Docs',
     component: Docs,
     meta: { requiresAuth: true } // protect this route
+  },
+  {
+    path: '/ui-kit',
+    name: 'UI-kit',
+    component: UIkit,
   },
   {
     path: '/:pathMatch(.*)*',

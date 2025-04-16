@@ -4,4 +4,7 @@
         color: var(--secondary-text-color);
         transition: all 0.3s ease;
     }
+    &__border{
+        border-bottom: 2px solid var(--header-border-bottom);
+    }
 }
