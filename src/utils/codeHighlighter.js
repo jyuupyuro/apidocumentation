@@ -1,14 +1,17 @@
-// utils/codeHighlighter.js
-import { getHighlighter } from 'shiki';
+import { createHighlighter } from 'shiki';
 
 let highlighter;
 
-export async function highlight(code, lang = 'javascript') {
+export async function highlight(code, lang = 'javascript', theme = 'plastic') {
   if (!highlighter) {
-    highlighter = await getHighlighter({
-      theme: 'github-light', // or 'material-theme-palenight'
+    highlighter = await createHighlighter({
+      themes: ['plastic', 'one-dark-pro'], // ✅ preload both
+      langs: [lang], // You can also preload multiple langs if needed
     });
   }
 
-  return highlighter.codeToHtml(code, { lang });
+  return highlighter.codeToHtml(code, {
+    lang,
+    theme,
+  });
 }

@@ -1,0 +1,15 @@
+.content {
+    &__title {
+        text-align: start;
+        font-size: 26px;
+        color: var(--text-color);
+        margin-bottom: 8px;
+        border-bottom: 1px solid var(--border-content);
+    }
+
+    &__description {
+        text-align: left;
+        font-size: 14px;
+        color: var(--text-color);
+    }
+}

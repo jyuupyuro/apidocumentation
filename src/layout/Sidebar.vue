@@ -21,31 +21,20 @@
 </template>
 
 <script setup>
-import { useRouter, useRoute } from 'vue-router';
-import { apiDocs } from '@/api/docs';
-import { logout } from '@/store/auth';
-import Button from '@/components/common/button.vue';
 import { ref } from 'vue';
 
-const router = useRouter();
-const route = useRoute();
 const menuData = ref([
   {
-    title: 'Components',
-    items: ['Modal', 'Table', 'Button']
+    title: 'Introduction',
+    items: ['']
   },
   {
-    title: 'Utilities',
-    items: ['Color', 'Spacing', 'Typography']
+    title: 'General Transactions',
+    items: ['Member Promotion Transaction', 'Insert Transaction', 'Update Transaction', 'All Transaction', 'Get Sum Transaction', 'Get Sum Daily', 'Fund Method Summary', 'Fund Method Transaction', 'Get Member Sum Transactions']
   },
   {
-    title: 'Layouts',
-    items: ['Grid', 'Container', 'Header']
-  }
+    title: 'Payment Gateways',
+    items: ['Deposit']
+  },
 ]);
-
-const logoutUser = () => {
-  logout();
-  router.push('/login');
-};
 </script>

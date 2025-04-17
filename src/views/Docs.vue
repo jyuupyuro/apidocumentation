@@ -1,9 +1,13 @@
 <template>
-  <div class="p-5">
+  <div class="mt-5">
     <b-row>
       <b-col md="12" class="text-center mb-4">
-        <h1>API Documentation</h1>
-        <p class="lead">Explore the API endpoints and their usage.</p>
+        <div class="d-flex flex-column">
+          <h1 class="content__title"> Introduction</h1>
+          <span class="content__description">
+            This report api is mainly used for game reports handling.
+          </span>
+        </div>
       </b-col>
     </b-row>
   </div>

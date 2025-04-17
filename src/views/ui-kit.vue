@@ -37,10 +37,20 @@
                 </div>
             </div>
         </section>
+
+        <section class="mb-5 ui">
+            <h5>CodeBlock</h5>
+            <div class="d-flex gap-3 flex-wrap justify-content-center">
+                <CodeBlock lang="javascript" :code="`const greet = (name) => console.log('Hello, ' + name);`" />
+            </div>
+        </section>
     </div>
 </template>
 
 <script setup>
 import Button from '@/components/common/Button.vue';
 import Input from '@/components/common/Input.vue';
+import CodeBlock from '../components/common/CodeBlock.vue';
+
+const code =''
 </script>
