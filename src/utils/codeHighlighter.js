@@ -2,7 +2,7 @@ import { createHighlighter } from 'shiki';
 
 let highlighter;
 
-export async function highlight(code, lang = 'javascript', theme = 'plastic') {
+export async function highlight(code, lang = 'javascript,', theme = 'plastic') {
   if (!highlighter) {
     highlighter = await createHighlighter({
       themes: ['plastic', 'one-dark-pro'], // ✅ preload both

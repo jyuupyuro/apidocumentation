@@ -11,7 +11,7 @@
     <div>
       <li class="list-group-item" v-for="(section, index) in menuData" :key="index">
         <div class="fw-bold py-2 text-start">{{ section.title }}</div>
-      <li v-for="(item, idx) in section.items" :key="idx" class="py-1 list-group-item border-0 px-2 text-start"
+      <li v-for="(item, idx) in section.items" :key="idx" class="py-2 list-group-item border-0 px-2 text-start sidenav__submenu"
         style="cursor: pointer;">
         {{ item }}
       </li>

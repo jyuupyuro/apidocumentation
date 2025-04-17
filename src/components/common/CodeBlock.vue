@@ -1,6 +1,6 @@
 <template>
     <div class="code-block-wrapper">
-      <button class="copy-btn" @click="copyToClipboard">Copy</button>
+      <!-- <button class="copy-btn" @click="copyToClipboard">Copy</button> -->
       <div class="code-block" v-html="highlighted"></div>
     </div>
   </template>
