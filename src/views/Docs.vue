@@ -33,7 +33,11 @@
             <h1 class="content__title"> Get Member Promotion Transactions</h1>
             <span class="content__description">Get Pending Transaction for specific member</span>
             <span class="content__example">Link</span>
-            <CodeBlock lang="javascript" :code=memberPromotion />
+            <CodeBlock lang="typescript" :code=memberPromotion />
+          </div>
+          <!-- card -->
+          <div class="content">
+            <span class="content__example">PHP Code Param</span>
           </div>
         </div>
       </b-col>

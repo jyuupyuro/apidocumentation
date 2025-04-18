@@ -3,6 +3,9 @@
         background-color: var(--header-bg);
         color: var(--secondary-text-color);
         transition: all 0.3s ease;
+        position: sticky;
+        top: 0;
+        z-index: 1;
     }
 
     &__border {
@@ -11,8 +14,9 @@
 
     &__form {
         // background-color: var(--header-form-bg);
-        background-color: var(--header-form-bg)!important;
-        &::placeholder{
+        background-color: var(--header-form-bg) !important;
+
+        &::placeholder {
             color: var(--text-color);
         }
     }
