@@ -47,11 +47,21 @@
 
         <section class="mb-5 ui">
             <h5>Table UI</h5>
+            <b-table :items="tableDemo" :bordered=true :striped=true :dark=isDark></b-table>
         </section>
 
         <section class="mb-5 ui">
             <h5>Tab UI</h5>
-
+            <div class="nav__container border">
+                <b-tabs content-class="mt-3">
+                    <b-tab title="First">
+                        <p>I'm the first tab</p>
+                    </b-tab>
+                    <b-tab title="Second">
+                        <p>I'm the second tab</p>
+                    </b-tab>
+                </b-tabs>
+            </div>
         </section>
     </div>
 </template>
@@ -60,8 +70,12 @@
 import Button from '@/components/common/Button.vue';
 import Input from '@/components/common/Input.vue';
 import CodeBlock from '../components/common/CodeBlock.vue';
+import { isDark } from '@/store/theme';
 
-const code = ''
-
-
+const tableDemo = [
+    { age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },
+    { age: 21, first_name: 'Larsen', last_name: 'Shaw' },
+    { age: 89, first_name: 'Geneva', last_name: 'Wilson' },
+    { age: 38, first_name: 'Jami', last_name: 'Carney' }
+]
 </script>
