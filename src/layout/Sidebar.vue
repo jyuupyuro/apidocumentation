@@ -1,18 +1,12 @@
 <template>
   <div class="p-3 sidenav__container h-100">
     <h5 class="mb-4 text-start">API Documentation</h5>
-    <!-- <b-list-group flush>
-      <router-link v-for="api in apiDocs" :key="api.id" :to="{ name: 'Docs', query: { endpoint: api.id } }"
-        class="list-group-item list-group-item-action" :class="{ active: api.id === $route.query.endpoint }">
-        <span class="text-uppercase small text-muted me-2">{{ api.method }}</span>
-        <span>{{ api.path }}</span>
-      </router-link>
-    </b-list-group> -->
     <div>
       <li class="list-group-item" v-for="(section, index) in menuData" :key="index">
-        <div class="fw-bold py-2 text-start">{{ section.title }}</div>
-      <li v-for="(item, idx) in section.items" :key="idx" class="py-2 list-group-item border-0 px-2 text-start sidenav__submenu"
-        style="cursor: pointer;">
+        <div style="cursor: pointer;" @click="scrollTo(section.title)" class="fw-bold py-2 text-start">{{ section.title }}</div>
+      <li v-for="(item, idx) in section.items" :key="idx"
+        class="py-2 list-group-item border-0 px-2 text-start sidenav__submenu pe-auto"
+        @click="scrollTo(item)">
         {{ item }}
       </li>
       </li>
@@ -37,4 +31,17 @@ const menuData = ref([
     items: ['Deposit']
   },
 ]);
+
+const scrollTo = (label) => {
+  const id = label
+    .toLowerCase()
+    .replace(/\s+/g, '-')              // spaces to dashes
+    .replace(/[^\w\-]+/g, '');         // remove non-word chars
+
+  const el = document.getElementById(id);
+  console.log(id)
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+};
 </script>

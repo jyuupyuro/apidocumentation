@@ -5,7 +5,7 @@
         <!-- main content here -->
         <div class="d-flex flex-column">
           <!-- card -->
-          <div class="content">
+          <div id="introduction" class="content">
             <h1 class="content__title"> Introduction</h1>
             <span class="content__description">
               This report api is mainly used for game reports handling.
@@ -29,8 +29,8 @@
             <CodeBlock lang="javascript" :code=signCode />
           </div>
           <!-- card -->
-          <div class="content">
-            <h1 class="content__title"> Get Member Promotion Transactions</h1>
+          <div id="general-transactions" class="content">
+            <h1 id="member-promotion-transaction" class="content__title"> Get Member Promotion Transactions</h1>
             <span class="content__description">Get Pending Transaction for specific member</span>
             <span class="content__example">Link</span>
             <CodeBlock lang="typescript" :code=memberPromotion />
@@ -38,6 +38,10 @@
           <!-- card -->
           <div class="content">
             <span class="content__example">PHP Code Param</span>
+            <b-table :items="codeParams" :bordered=true :striped=true :dark=isDark></b-table>
+            <span class="content__example">Example</span>
+            <CodeBlock lang="json" :code=jsonPromotionTransaction />
+            <span class="content__example">Json Response Example</span>
           </div>
         </div>
       </b-col>
@@ -47,6 +51,7 @@
 
 <script setup>
 import CodeBlock from '../components/common/CodeBlock.vue';
+import { isDark } from '@/store/theme';
 
 // CodeBlock Section
 const signCode =
@@ -66,4 +71,36 @@ submit params: ["daterange" => "2023-03-01_2023-03-02",
 
 const memberPromotion =
   `POST ugcrypto-transactions.web-sample.live/transactions/get_pending_member_promotion`
+
+
+const codeParams = [
+  {
+    param: 'player_id',
+    validate: 'optional',
+    type: 'string',
+    description: 'member agent id (eg. BAAAAAA0002)',
+    default: ''
+  },
+  {
+    param: 'token',
+    validate: 'optional',
+    type: 'string',
+    description: 'token wallet (eg. BTC)',
+    default: ''
+  },
+  {
+    param: 'sign',
+    validate: 'required',
+    type: 'string',
+    description: 'signature generate with specific keys',
+    default: 'check on signature section'
+  }
+];
+
+const jsonPromotionTransaction =
+  `JSON{
+
+"player_id": "BAAAAAA0002",
+"sign":"signature with secret key"
+};`
 </script>
