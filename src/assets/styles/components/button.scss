@@ -11,7 +11,7 @@
         background-color: var(--btn-primary);
         color: var(--btn-primary-text);
 
-        &:hover{
+        &:hover {
             background-color: var(--btn-primary-hover);
         }
     }
@@ -44,6 +44,11 @@
         &:hover {
             background-color: var(--btn-alert-hover);
             color: var(--btn-alert-text);
+        }
+
+        &:active {
+            background-color: var(--btn-alert-active) !important;
+            color: var(--btn-alert-text) !important;
         }
     }
 

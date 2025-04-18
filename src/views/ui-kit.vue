@@ -44,6 +44,15 @@
                 <CodeBlock lang="javascript" :code="`const greet = (name) => console.log('Hello, ' + name);`" />
             </div>
         </section>
+
+        <section class="mb-5 ui">
+            <h5>Table UI</h5>
+        </section>
+
+        <section class="mb-5 ui">
+            <h5>Tab UI</h5>
+
+        </section>
     </div>
 </template>
 
@@ -52,5 +61,7 @@ import Button from '@/components/common/Button.vue';
 import Input from '@/components/common/Input.vue';
 import CodeBlock from '../components/common/CodeBlock.vue';
 
-const code =''
+const code = ''
+
+
 </script>
